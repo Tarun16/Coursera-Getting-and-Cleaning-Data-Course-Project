@@ -19,6 +19,7 @@ subject_trainData <- read.table("getdata/UCI HAR Dataset/train/subject_train.txt
 
 ##reading the features data to get column names
 features_data <- read.table("getdata/UCI HAR Dataset/features.txt")
+features_names <- features_data[,2]
 
 ##merging set data for test and training together
 x_complete <- rbind(x_testData, x_trainData)
